@@ -52,7 +52,7 @@ public class TaskPatrol : Node
             else
             {
                 // Handle movement and rotation.
-                transform.position = Vector3.MoveTowards(transform.position, targetPos, SlayerBT.speed * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, targetPos, SlayerBT.walkSpeed * Time.deltaTime);
                 transform.LookAt(targetPos);
             }
         }
